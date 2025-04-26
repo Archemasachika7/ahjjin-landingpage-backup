@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeConclave - Competitive Programming Community</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="landing-page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" defer></script>
+</head>
+<body>
+    <!-- Parallax Container -->
+    <div class="parallax-container">
+        <div class="parallax-bg" id="parallax-bg"></div>
+        
+        <!-- Header -->
+        <header id="header">
+            <div class="logo">
+                <h1>Code<span class="gradient-text">Conclave</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#features" class="active">Features</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#preview">Preview</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button id="theme-toggle" class="theme-toggle">
+                    <i class="fas fa-sun sun-icon"></i>
+                    <i class="fas fa-moon moon-icon"></i>
+                </button>
+                <button id="login-btn" class="login-btn">
+                    <i class="fas fa-user"></i>
+                    Login
+                </button>
+            </div>
+            <button id="mobile-menu-btn" class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </header>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobile-menu">
+            <button id="mobile-menu-close" class="mobile-menu-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <ul>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#preview">Preview</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+            </ul>
+            <div class="mobile-actions">
+                <button id="mobile-login-btn" class="login-btn">
+                    <i class="fas fa-user"></i>
+                    Login
+                </button>
+            </div>
+        </div>
+        
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content" data-aos="fade-right">
+                <h1>Where <span class="gradient-text">Coders</span> Unite, Compete, and Grow</h1>
+                <p>Join our vibrant community of competitive programmers, solve challenging problems, and climb the ranks to showcase your coding prowess.</p>
+                <div class="hero-buttons">
+                    <button id="register-btn" class="primary-btn">
+                        <i class="fas fa-user-plus"></i>
+                        Join Community
+                    </button>
+                    <button class="secondary-btn">
+                        <i class="fas fa-info-circle"></i>
+                        Learn More
+                    </button>
+                </div>
+                <div class="auth-benefits">
+                    <div class="benefit-item">
+                        <i class="fas fa-unlock"></i>
+                        <span>Personalized challenge recommendations</span>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-unlock"></i>
+                        <span>Real-time competition access</span>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-unlock"></i>
+                        <span>Developer networking opportunities</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image" data-aos="fade-left">
+                <img src="https://via.placeholder.com/500x400" alt="Coding Illustration">
+                <div class="auth-overlay">
+                    <i class="fas fa-lock"></i>
+                    <span>Sign up to unlock full platform</span>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <!-- Social Proof Section -->
+    <section id="social-proof" class="social-proof">
+        <div class="container">
+            <div class="trusted-by">
+                <p>Trusted by developers from</p>
+                <div class="company-logos">
+                    <img src="https://via.placeholder.com/120x40" alt="Google">
+                    <img src="https://via.placeholder.com/120x40" alt="Microsoft">
+                    <img src="https://via.placeholder.com/120x40" alt="Amazon">
+                    <img src="https://via.placeholder.com/120x40" alt="Meta">
+                    <img src="https://via.placeholder.com/120x40" alt="Apple">
+                </div>
+            </div>
+            <div class="stats-container">
+                <div class="stat-item">
+                    <span class="stat-number">10,000+</span>
+                    <span class="stat-label">Active Developers</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">500,000+</span>
+                    <span class="stat-label">Challenges Completed</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">200+</span>
+                    <span class="stat-label">Daily Competitions</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">98%</span>
+                    <span class="stat-label">Satisfaction Rate</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Powerful <span class="gradient-text">Features</span></h2>
+                <p>Discover the tools and resources that will elevate your competitive programming journey.</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>In-Browser Code Editor</h3>
+                    <p>Write, test, and submit your solutions directly in our powerful code editor with syntax highlighting and auto-completion.</p>
+                    <div class="feature-preview">
+                        <img src="https://via.placeholder.com/300x200" alt="Code Editor Preview">
+                        <div class="locked-overlay">
+                            <i class="fas fa-lock"></i>
+                            <span>Unlock with sign-up</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Live Competitions</h3>
+                    <p>Participate in daily coding contests and compete with programmers from around the world in real-time.</p>
+                    <div class="feature-preview">
+                        <img src="https://via.placeholder.com/300x200" alt="Competition Preview">
+                        <div class="locked-overlay">
+                            <i class="fas fa-lock"></i>
+                            <span>Unlock with sign-up</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Performance Analytics</h3>
+                    <p>Track your progress with detailed statistics and insights on your problem-solving patterns and efficiency.</p>
+                    <div class="feature-preview">
+                        <img src="https://via.placeholder.com/300x200" alt="Analytics Preview">
+                        <div class="locked-overlay">
+                            <i class="fas fa-lock"></i>
+                            <span>Unlock with sign-up</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Community Collaboration</h3>
+                    <p>Connect with fellow programmers, share solutions, and learn from the community's collective wisdom.</p>
+                    <div class="feature-preview">
+                        <img src="https://via.placeholder.com/300x200" alt="Community Preview">
+                        <div class="locked-overlay">
+                            <i class="fas fa-lock"></i>
+                            <span>Unlock with sign-up</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Interactive Preview Section -->
+    <section id="preview" class="preview">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Try Before You <span class="gradient-text">Join</span></h2>
+                <p>Experience a taste of what CodeConclave offers with these interactive previews.</p>
+            </div>
+            
+            <div class="preview-tabs" data-aos="fade-up">
+                <button class="preview-tab active" data-tab="challenge">Sample Challenge</button>
+                <button class="preview-tab" data-tab="leaderboard">Leaderboard</button>
+                <button class="preview-tab" data-tab="editor">Code Editor</button>
+            </div>
+            
+            <div class="preview-content">
+                <div class="preview-panel active" id="challenge-panel">
+                    <div class="challenge-preview">
+                        <div class="challenge-description">
+                            <h3>Two Sum Problem</h3>
+                            <div class="challenge-meta">
+                                <span class="difficulty easy">Easy</span>
+                                <span class="category">Arrays</span>
+                            </div>
+                            <p>Given an array of integers <code>nums</code> and an integer <code>target</code>, return indices of the two numbers such that they add up to <code>target</code>.</p>
+                            <p>You may assume that each input would have exactly one solution, and you may not use the same element twice.</p>
+                            
+                            <div class="example">
+                                <h4>Example:</h4>
+                                <pre><code>Input: nums = [2,7,11,15], target = 9
+Output: [0,1]
+Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].</code></pre>
+                            </div>
+                        </div>
+                        <div class="challenge-action">
+                            <button class="primary-btn disabled">
+                                <i class="fas fa-code"></i>
+                                Solve Challenge
+                                <div class="lock-indicator">
+                                    <i class="fas fa-lock"></i>
+                                </div>
+                            </button>
+                            <p class="action-note">Sign up to solve this and 1000+ more challenges</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="preview-panel" id="leaderboard-panel">
+                    <div class="leaderboard-preview">
+                        <div class="leaderboard-filters">
+                            <select disabled>
+                                <option>Global Rankings</option>
+                            </select>
+                            <select disabled>
+                                <option>This Month</option>
+                            </select>
+                        </div>
+                        <table class="leaderboard-table">
+                            <thead>
+                                <tr>
+                                    <th>Rank</th>
+                                    <th>User</th>
+                                    <th>Solved</th>
+                                    <th>Points</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td class="user">
+                                        <img src="https://via.placeholder.com/30" alt="User">
+                                        <span>CodeMaster</span>
+                                    </td>
+                                    <td>187</td>
+                                    <td>15,420</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td class="user">
+                                        <img src="https://via.placeholder.com/30" alt="User">
+                                        <span>AlgoNinja</span>
+                                    </td>
+                                    <td>175</td>
+                                    <td>14,830</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td class="user">
+                                        <img src="https://via.placeholder.com/30" alt="User">
+                                        <span>ByteWizard</span>
+                                    </td>
+                                    <td>168</td>
+                                    <td>13,950</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="blur-overlay">
+                            <div class="blur-content">
+                                <i class="fas fa-lock"></i>
+                                <p>Sign up to view complete leaderboard</p>
+                                <button id="leaderboard-signup-btn" class="primary-btn">
+                                    <i class="fas fa-user-plus"></i>
+                                    Join Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="preview-panel" id="editor-panel">
+                    <div class="editor-preview">
+                        <div class="editor-header">
+                            <select disabled>
+                                <option>Python</option>
+                            </select>
+                            <button class="editor-action-btn" disabled>
+                                <i class="fas fa-play"></i>
+                                Run
+                            </button>
+                            <button class="editor-action-btn" disabled>
+                                <i class="fas fa-check"></i>
+                                Submit
+                            </button>
+                        </div>
+                        <div class="code-editor">
+                            <pre><code>def two_sum(nums, target):
+    # Your solution here
+    pass
+
+# Example test case
+nums = [2, 7, 11, 15]
+target = 9
+print(two_sum(nums, target))  # Expected output: [0, 1]</code></pre>
+                        </div>
+                        <div class="blur-overlay">
+                            <div class="blur-content">
+                                <i class="fas fa-lock"></i>
+                                <p>Sign up to use the full-featured code editor</p>
+                                <button id="editor-signup-btn" class="primary-btn">
+                                    <i class="fas fa-user-plus"></i>
+                                    Join Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>What Our <span class="gradient-text">Community</span> Says</h2>
+                <p>Hear from developers who have transformed their coding skills with CodeConclave.</p>
+            </div>
+            
+            <div class="testimonials-slider" data-aos="fade-up">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"CodeConclave transformed my approach to problem-solving. The daily challenges and competitive environment pushed me to improve consistently. After 3 months, I landed my dream job at Google!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://via.placeholder.com/60" alt="Alex Johnson">
+                        <div class="author-info">
+                            <h4>Alex Johnson</h4>
+                            <p>Software Engineer, Google</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The structured approach to competitive programming on CodeConclave helped me prepare for technical interviews effectively. The community support is incredible, and the challenges are both fun and educational."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://via.placeholder.com/60" alt="Samantha Lee">
+                        <div class="author-info">
+                            <h4>Samantha Lee</h4>
+                            <p>Frontend Developer, Microsoft</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"As a self-taught programmer, I struggled with data structures and algorithms. CodeConclave's progressive challenge system and detailed explanations helped me build confidence and master complex concepts."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://via.placeholder.com/60" alt="Michael Chen">
+                        <div class="author-info">
+                            <h4>Michael Chen</h4>
+                            <p>Data Scientist, Amazon</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Simple <span class="gradient-text">Pricing</span></h2>
+                <p>Choose the plan that fits your competitive programming journey.</p>
+            </div>
+            
+            <div class="pricing-grid" data-aos="fade-up">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Free</h3>
+                        <div class="price">
+                            <span class="amount">$0</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Access to 100+ basic challenges</li>
+                        <li><i class="fas fa-check"></i> Community forum access</li>
+                        <li><i class="fas fa-check"></i> Basic code editor</li>
+                        <li><i class="fas fa-check"></i> Public leaderboard</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Advanced challenges</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Live competitions</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Performance analytics</li>
+                    </ul>
+                    <button class="primary-btn pricing-btn">
+                        <i class="fas fa-user-plus"></i>
+                        Sign Up Free
+                    </button>
+                </div>
+                
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">Popular</div>
+                    <div class="pricing-header">
+                        <h3>Pro</h3>
+                        <div class="price">
+                            <span class="amount">$15</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Access to 1000+ challenges</li>
+                        <li><i class="fas fa-check"></i> Community forum access</li>
+                        <li><i class="fas fa-check"></i> Advanced code editor</li>
+                        <li><i class="fas fa-check"></i> Public & private leaderboards</li>
+                        <li><i class="fas fa-check"></i> Advanced challenges</li>
+                        <li><i class="fas fa-check"></i> Weekly competitions</li>
+                        <li><i class="fas fa-check"></i> Basic performance analytics</li>
+                    </ul>
+                    <button class="primary-btn pricing-btn">
+                        <i class="fas fa-rocket"></i>
+                        Get Pro
+                    </button>
+                </div>
+                
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Enterprise</h3>
+                        <div class="price">
+                            <span class="amount">$49</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Access to all challenges</li>
+                        <li><i class="fas fa-check"></i> Priority community support</li>
+                        <li><i class="fas fa-check"></i> Premium code editor</li>
+                        <li><i class="fas fa-check"></i> Custom leaderboards</li>
+                        <li><i class="fas fa-check"></i> Expert-level challenges</li>
+                        <li><i class="fas fa-check"></i> Daily competitions</li>
+                        <li><i class="fas fa-check"></i> Advanced performance analytics</li>
+                    </ul>
+                    <button class="primary-btn pricing-btn">
+                        <i class="fas fa-crown"></i>
+                        Get Enterprise
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Final CTA Section -->
+    <section class="final-cta">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2>Ready to Elevate Your Coding Skills?</h2>
+                <p>Join thousands of developers who are already improving their competitive programming abilities with CodeConclave.</p>
+                <button id="final-cta-btn" class="primary-btn cta-btn">
+                    <i class="fas fa-user-plus"></i>
+                    Join CodeConclave Today
+                </button>
+                <div class="cta-note">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>No credit card required for free plan</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>Code<span class="gradient-text">Conclave</span></h2>
+                <p>A community where coders unite, compete, and grow together.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#preview">Preview</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Community Guidelines</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 CodeConclave. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- Auth Modal -->
+    <div class="modal" id="authModal">
+        <div class="modal-content">
+            <button id="modal-close" class="modal-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="auth-tabs">
+                <button class="auth-tab active" data-tab="login">Login</button>
+                <button class="auth-tab" data-tab="register">Register</button>
+            </div>
+            <form id="loginForm" class="auth-form active">
+                <div class="form-group">
+                    <label for="login-email">Email</label>
+                    <input type="email" id="login-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" required>
+                </div>
+                <div class="remember-me">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Remember me</label>
+                </div>
+                <button type="submit" class="primary-btn">Login</button>
+                <div class="form-footer">
+                    <a href="#">Forgot password?</a>
+                </div>
+            </form>
+            <form id="registerForm" class="auth-form">
+                <div class="form-group">
+                    <label for="register-name">Full Name</label>
+                    <input type="text" id="register-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-email">Email</label>
+                    <input type="email" id="register-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-password">Password</label>
+                    <input type="password" id="register-password" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-confirm">Confirm Password</label>
+                    <input type="password" id="register-confirm" required>
+                </div>
+                <div class="terms">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+                </div>
+                <button type="submit" class="primary-btn">Register</button>
+            </form>
+            <div class="auth-progress">
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+                <p>One step away from joining the community</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    <script src="landing-page.js"></script>
+</body>
+</html>
